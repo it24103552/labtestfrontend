@@ -55,9 +55,10 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
 
       <label>Image URL</label>
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />
+      
 
       <label>Expiry Date</label>
-      <input name="name" value={formData.name} onChange={handleChange} required />
+      <input expireDate="Expiry Date" value={formData.expireDate} onChange={handleChange} required />
 
 
       <button className="btn primary" type="submit">{submitText}</button>
